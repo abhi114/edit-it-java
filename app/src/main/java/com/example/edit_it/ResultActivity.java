@@ -16,6 +16,7 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityResultBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        getSupportActionBar().hide();
         binding.image.setImageURI(getIntent().getData());
     }
 }

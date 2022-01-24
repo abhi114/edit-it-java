@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
     buildFeatures {
         viewBinding true
     }
@@ -43,6 +43,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation files('libs/ds-photo-editor-sdk-v10.aar')
     //implementation (name:'ds-photo-editor-sdk-v10', ext:'aar')
+    implementation 'com.google.android.gms:play-services-ads:20.5.0'
 
 
 
